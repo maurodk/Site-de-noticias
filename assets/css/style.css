@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.header {
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #fde100;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+
+  & ul {
+    display: flex;
+    list-style: none;
+
+    & li {
+      font-weight: 500;
+      font-size: 20px;
+      margin-left: 1rem;
+    }
+
+    & li:hover {
+      cursor: pointer;
+      color: white;
+    }
+  }
+
+  & img {
+    width: 100px;
+  }
+  .logodiv {
+    flex: 1;
+  }
+  .uldiv {
+    flex: 2;
+  }
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background: no-repeat center/cover url(/assets/img/wallpaper.png);
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+
+  & .hot {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    background: no-repeat center/cover url(/assets/img/hot.webp);
+    background-size: 100%;
+    justify-content: space-between;
+
+    & h2 {
+      margin-left: 5px;
+      margin-bottom: 5px;
+      text-align: left;
+      font-weight: 400;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    & h1 {
+      font-size: 15px;
+      font-weight: 500;
+      color: black;
+      background-color: #fde100;
+      border-radius: 2px;
+      margin-left: 5px;
+      margin-top: 5px;
+      width: max-content;
+      padding: 3px;
+    }
+  }
+
+  .hot::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Começa totalmente transparente */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+  }
+
+  .hot:hover::before {
+    cursor: pointer;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Torna-se translúcido (50% de opacidade) ao passar o mouse */
+  }
+}
+
+.news-section {
+  display: flex;
+  background-color: #fde100;
+  height: 500px;
+  width: 100%;
+
+  .title{
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  & .last-news-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & .news {
+        display: flex;
+        justify-content: space-around;
+
+        & .news-container {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          width: 300px;
+
+        }
+
+        & .news-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        background-size: 100%;
+        justify-content: space-between;
+
+        & h1 {
+          font-size: 15px;
+          font-weight: 500;
+          color: black;
+          background-color: #fde100;
+          border-radius: 2px;
+          margin-left: 5px;
+          margin-top: 5px;
+          width: max-content;
+          padding: 3px;
+        }
+        }
+
+        & h2 {
+          font-size: 20px;
+          margin-top: 5px;
+          text-align: left;
+          font-weight: 400;
+          color: black;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        & .img1 {
+          background: no-repeat center/cover url(/assets/img/tecnico.webp);
+        }
+
+        & .img2 {
+          background: no-repeat center/cover url(/assets/img/sancho.png);
+        }
+
+        & .img3 {
+          background: no-repeat center/cover url(/assets/img/derbi.png);
+        }
+
+        & .img4 {
+          background: no-repeat center/cover url(/assets/img/reus.png);
+        }
+    }
+  }
+}
+
+.news-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Começa totalmente transparente */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.news-item:hover::before {
+  cursor: pointer;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Torna-se translúcido (50% de opacidade) ao passar o mouse */
+  
+} 
+
+footer {
+  min-height: 20vh;
+  color: #fde100;
+  background-color: black;
+}
+
+.social > ul {
+  height: 10vh;
+  align-items: center;
+  list-style: none;
+  justify-content: space-around;
+  display: flex;
+}
+
+.copyright {
+  margin-top: 15px;
+  text-align: center;
+}
