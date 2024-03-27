@@ -47,7 +47,7 @@
   display: flex;
   width: 100%;
   height: 500px;
-  background: no-repeat center/cover url(/assets/img/wallpaper.png);
+  background: no-repeat center/cover url(assets/img/wallpaper.png);
   margin-top: 100px;
   flex-direction: column;
   align-items: end;
@@ -62,7 +62,7 @@
     border: 1px solid black;
     margin-right: 3rem;
     margin-bottom: 1rem;
-    background: no-repeat center/cover url(/assets/img/hot.webp);
+    background: no-repeat center/cover url(assets/img/hot.webp);
     background-size: 100%;
     justify-content: space-between;
 
@@ -171,19 +171,19 @@
         }
 
         & .img1 {
-          background: no-repeat center/cover url(/assets/img/tecnico.webp);
+          background: no-repeat center/cover url(assets/img/tecnico.webp);
         }
 
         & .img2 {
-          background: no-repeat center/cover url(/assets/img/sancho.png);
+          background: no-repeat center/cover url(assets/img/sancho.png);
         }
 
         & .img3 {
-          background: no-repeat center/cover url(/assets/img/derbi.png);
+          background: no-repeat center/cover url(assets/img/derbi.png);
         }
 
         & .img4 {
-          background: no-repeat center/cover url(/assets/img/reus.png);
+          background: no-repeat center/cover url(assets/img/reus.png);
         }
     }
   }
